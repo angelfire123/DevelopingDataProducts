@@ -1,3 +1,8 @@
+# Developing Data Products - Assignment - ui.R file
+# by Cristian Popescu (September 10th, 2014)
+#
+#
+
 library(shiny)
 
 # Define UI for our assignment
