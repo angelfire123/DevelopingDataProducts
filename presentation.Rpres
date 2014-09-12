@@ -1,0 +1,60 @@
+Presentation for Developing Data Products Assignment
+========================================================
+author: Cristian Popescu
+date: September 10th 
+autosize: true
+width: 1600
+
+Introduction
+========================================================
+
+The following presentation will intend to guiden the user through the assignment for **Develping Data Products course**.
+
+For our assignment, the data to be used was **mtcars**
+
+```{r}
+head(mtcars)
+```
+
+
+
+Lets get started
+========================================================
+
+
+- Open the right drop-down 
+  - Select one of the options (e.g. MPG, Cylinders etc)
+- Observe on the right panel the histogram of the data selected (e.g. Cylinders or MPG)
+
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+par(mfrow=c(3,3))
+hist(mtcars$mpg)
+hist(mtcars$cyl)
+hist(mtcars$disp)
+hist(mtcars$am)
+hist(mtcars$hp)
+hist(mtcars$drat)
+hist(mtcars$gear)
+hist(mtcars$carb)
+```
+
+Slide With Summary
+========================================================
+
+On the Summary tab from the right panel, the user can view the summary of the data selected (e.g. MPG, Cylinders or Displacement)
+- MPG:
+```{r, echo=FALSE}
+summary(mtcars$mpg)
+```
+  - Cylinders:
+```{r, echo=FALSE}
+summary(mtcars$cyl)
+```
+  - Displacement:
+```{r, echo=FALSE}
+summary(mtcars$disp)
+```
